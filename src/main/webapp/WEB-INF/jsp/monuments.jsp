@@ -25,11 +25,19 @@
                         <td>${monument.proprietaire}</td>
                         <td>${monument.longitude}</td>
                         <td>${monument.latitude}</td>
-                        <td>${monument.codeInsee}</td>
-
-
                     </tr>
+                    <c:forEach items="${monument.listCelebrite}" var="listCelebrite">
+              
+                        <tr>
+                            <td>celebrité nom : ${listCelebrite.nom}</td>
+                            <td>celebrité prénom : ${listCelebrite.prenom}</td>
+                        </tr>
+
+                    </c:forEach>
                 </c:forEach>
+  
+
+
             </tbody>
         </table>
     </body>
